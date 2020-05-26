@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>DCPlayer</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>	
+    <link rel="stylesheet" type="text/css" href="css/banner-style.css" media="screen" />		
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>	
+	<script type="text/javascript" src="js/jquery.cssAnimate.mini.js"></script>	
+	<script type="text/javascript" src="js/jquery.waitforimages.js"></script>	
+    <script type="text/javascript" src="js/jquery.themepunch.paradigm-tky.js"></script>	
+	<link rel="stylesheet" type="text/css" href="css/banner-settings.css" media="screen" />
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+<style type="text/css">
+* {margin:0;padding:0;}
+a.home {position:relative;display:block;z-index:9999;}
+.spacer {position:absolute;width:910px;height:220px;background:url('../img/spacer.gif');z-index:9999;}
+.top-banner {}
+.top-line {height:4px;background:#00a6bd;position:relative;z-index:99999;}/* url('img/top-line.gif')*/
+.logo {width:200px;height:90px;background:url('img/tobyyip_logo01.png');position:absolute;top:18px;left:50px;z-index:999999;}
+.globe {width:24px;height:24px;background:url('');position:absolute;top:3px;left:62px;}
+.globe-shade {width:24px;height:24px;background:url('') no-repeat 50%;position:absolute;top:3px;left:62px;z-index:1;}
+.slogan {width:136px;height:42px;background:url('');position:absolute;top:30px;left:260px;z-index:999999;}
+</style>
+</head>
+
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+<a href="http://www.tobyyip.com/blog/" class="home" target="_top">
+<!--<div class="top-line"></div>-->
+			<div id="banner" class="light">
+				<ul>
+					<li data-transition="fade">
+							<div  class="creative_layer">
+<div class="logo">
+
+<div class="globe-shade"></div>
+<div class="globe"></div></div>
+<div class="slogan"></div>
+
+								<div class="caption_green fadeup" style="top:45px;left:550px;"><!--Welcome to tobyyip.com--></div>
+								<div class="caption_black smallcap faderight" style="top:20px;left:420px"></div>
+							</div>
+								<div class="spacer"></div><img src="img/banner_910x220.png">
+					</li>
+				</ul>
+			</div>
+            </a>
+			<script type="text/javascript">
+				$(document).ready(function() {
+					$.noConflict();					 									
+					jQuery('#banner').paradigm(
+						{										
+							width:910,
+							height:220,
+							//thumbWidth:90,
+							//thumbHeight:50,
+							//thumbAmount:6,							
+							//thumbSpaces:4,
+							//thumbPadding:4,
+							shadow:'true',
+							parallaxX:1000,
+							parallaxY:20,
+							captionParallaxX:-40,
+							captionParallaxY:-10,
+							//touchenabled:'on',
+							timer:5						
+						});
+			});
+			</script>
+	</body>
+</html>

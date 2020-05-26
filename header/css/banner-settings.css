@@ -1,0 +1,23 @@
+.light .paradigm_thumb_container{		
+	/*background:url('../img/shadow_thumb_repeater.png') repeat-X;*/
+	background-color:#e5e5e5;display:none;
+}
+
+.light .paradigm_thumb_container_bg{
+	/*background:url('../img/shadow_thumb_repeater.png') repeat-X;*/
+	background-color: #ffffff;	
+}
+
+.light .paradigm_thumb_container #thumbmask{
+	/*background:url('../img/shadow_thumb_repeater.png') repeat-X;*/
+	background-color:#fff;
+}
+.paradigm-thumbs:hover {
+opacity: .8;
+-moz-opacity: .8;
+filter: alpha(opacity=80);}
+img#over_img {/*width:auto;height:170px;*/}
+.paradigm-thumbs {/*background-size:243%;*/
+/*ie8*/
+/*-ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='linkToImage.jpg', sizingMethod='scale')";
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='linkToImage.jpg', sizingMethod='scale');*/}
